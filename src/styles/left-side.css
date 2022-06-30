@@ -1,0 +1,263 @@
+
+
+.left-side 
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: .9fr .1fr;
+    grid-template-rows: .98fr;
+    padding: 1rem;
+    min-height: calc(100vh - 120px);
+    
+}
+
+.chat-container 
+{
+    max-height: calc(100vh - 120px);
+    min-height: calc(100vh - 120px);
+  
+    position: relative;
+    border-radius: 1rem;
+    border: 3px solid rgb(39,101,155);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+}
+
+.send-message
+{
+    position: absolute;
+    bottom: 0px;
+    border-bottom-left-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+    width: 100%;
+    height: 7.5%;
+    border: none;
+    outline: none;
+    padding: 0 1rem .2rem;
+    background: rgba(0, 0, 0, .65);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: .8fr .2fr;
+    
+}
+
+.message-input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, .75);
+      
+ 
+    font-family: "Lato";
+    font-size: 22px;
+}
+
+.send-icon 
+{
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    color: #fff;
+    position: relative;
+    background: royalblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    
+    right: 10px;
+    transition: all 350ms ease-in-out;
+}
+
+.send-icon .icon 
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.svg-inline--fa.fa-w-8 {
+    width: 50px;
+    
+}
+
+.send-icon:hover
+{
+    background: #fff;
+    color: royalblue;
+}
+
+.messages-container 
+{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1rem;
+    align-items: flex-end;
+    padding: 0rem .25rem;
+    overflow: auto;
+    
+    margin: 80px 0;
+}
+
+.message {
+    max-width: 10vw;
+    padding: 0 1.5rem;
+    min-height: 2vw;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    word-break: break-all;
+}
+
+.message.white 
+{
+    background: rgb(164,199,233);
+}
+
+.message.black 
+{
+    background: rgb(39,101,155);
+}
+
+.message.opponent
+{
+    align-self: flex-start;
+}
+
+.message p 
+{
+    font-size: 1vw;
+    font-family: "Lato";
+    font-weight: 500;
+    color: #fff;
+    margin: .65rem auto;
+    line-height: 3vh;
+}
+
+.title-chat 
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    background: royalblue;
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+}
+
+.title-chat h2 
+{
+    text-align: center;
+    color: #fff;
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+.numbers 
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-self: flex-end;
+
+}
+
+.numbers p 
+{
+    font-size: 22px;
+    color: #fff;
+}
+
+.pieces {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+.pieces .piece-selections 
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.pieces .piece-selections .icon 
+{
+    margin: 2rem auto;
+}
+
+.pieces .piece-selections .piece-selection 
+{
+    font-size: 50px;
+    cursor: pointer;
+    stroke-width: 20px;
+    
+}
+
+
+.pieces .piece-selections .black-icon .piece-selection
+{
+    stroke: #fff;
+}
+
+.pieces .piece-selections .black-icon .piece-selection:hover
+{
+    stroke: rgb(81,140,192);
+}
+
+.pieces .piece-selections .white-icon .piece-selection:hover
+{
+    stroke: rgb(39,101,155);
+}
+
+.pieces .delete 
+{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pieces .delete .delete-icon 
+{
+    font-size: 50px;
+    
+    stroke-width: 20px;
+  
+    transition: all 350ms ease;
+}
+
+.pieces .delete .delete-icon:hover 
+{
+    stroke: #000;
+}
+
+.pieces .delete h2 
+{
+    color: crimson;
+}

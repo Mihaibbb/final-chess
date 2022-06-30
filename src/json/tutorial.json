@@ -1,0 +1,125 @@
+{
+    "modules" : {
+        "chapter_1": {
+            "title_en": "Game",
+            "chapters": {
+                "chapter_1": {
+                    "title_en": "1. What is chess?",
+                    "description": {
+                        "text_en": "Chess is a board game of strategic skill for two players, played on a chequered board on which each playing piece is moved according to precise rules. The object is to put the opponent's king under a direct attack from which escape is impossible, named checkmate.The easiest way to win is to constantly threaten the king, so that he can't advance on the board.",
+                        "title_2": "2. Board",
+                        "text_2_en": "The chess board has 8 rows and 8 columns. This is how it looks: ",
+                        "board": "classic"
+                    }
+
+                },
+    
+                "chapter_2": {
+                    "title_en": "2. The pieces. ",
+                    "description": {
+                        "text_en": "Every piece."
+                    }
+                },
+    
+                "chapter_3": {
+                    "title_en": "3. The point of this game. ",
+                    "description": {
+                        "text_en": "Point of this game."
+                    }
+                },
+    
+                "chapter_4": {
+                    "title_en": "4. How to win and not lose!",
+                    "description": {
+    
+                    }
+                }
+            }
+        },
+
+        "chapter_2": {
+            "title_en": "Pieces and movement",
+            "chapters": {
+                "chapter_1": {
+                    "title_en": "1. King",
+                    "description": {
+                        "pieceCode": 6
+                    }
+                    
+                },
+    
+                "chapter_2": {
+                    "title_en": "2. Pawn",
+                    "description": {
+    
+                    },
+                    "pieceCode": 1
+                },
+    
+                "chapter_3": {
+                    "title_en": "3. Rook",
+                    "description": {
+    
+                    },
+                    "pieceCode": 2
+                },
+    
+                "chapter_4": {
+                    "title_en": "4. Knight",
+                    "description": {
+    
+                    },
+                    "pieceCode": 3
+                },
+    
+                "chapter_5": {
+                    "title_en": "5. Bishop",
+                    "description": {
+    
+                    },
+                    "pieceCode": 4
+                },
+    
+                "chapter_6": {
+                    "title_en": "6. Queen",
+                    "description": {
+    
+                    },
+    
+                    "pieceCode": 5
+                }
+            }
+        },
+
+
+        "chapter_3": {
+            "title_en": "Tips and tricks",
+            "chapters": {
+                "chapter_1": {
+
+                }
+            }
+        },
+
+        "chapter_4": {
+            "title_en": "How to use the platform?",
+            "chapters": {
+                "chapter_1": {
+
+                }
+            }
+        },
+
+        "chapter_5": {
+            "title_en": "Learning is knowledge",
+            "chapters": {
+                "chapter_1": {
+                    "title_en": "Enjoy and play!",
+                    "description": {
+                        "text_en": "Congratulations! You finished our tutorial for begginers course. Hopefully you learned how to play from this tutorial module. Please give us a feedback about our platform!"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,220 @@
+.banner 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-text 
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-family: "Lato";
+    color: rgba(255, 255, 255, .75);
+    font-weight: 500;
+}
+
+.content-tutorial
+{
+    width: 100%;
+    min-height: calc(100vh - 360px);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: .225fr .775fr auto;
+    grid-gap: 2rem;
+    padding: 2rem;
+    font-family: "Lato";
+}
+
+.chapters
+{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    align-self: flex-start;
+    background: linear-gradient(135deg, rgb(127, 169, 211), rgb(39,101,155));
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+.chapters .chapter 
+{
+    width: 100%;
+    min-height: 60px;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, .85);
+    margin: .75rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    font-family: "Lato";
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    
+}
+
+.chapters .chapter p 
+{
+    padding-right: 2rem;
+
+}
+
+.chapters .chapter .tick 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 10px;
+    
+}
+
+.description-tutorial
+{
+    width: 100%;
+    min-height: 200px;
+    transform: scale(1);
+    /* max-width: 40%; */
+    transform-origin: top;
+    transition: all 350ms ease-in;
+}
+
+.description-tutorial.hide 
+{
+    transform: scale(0);
+   
+}
+
+.description-tutorial.total_hide 
+{
+    display: none;
+}
+
+.chapter-title
+{
+    text-align: left;
+    align-items: center;
+    color: rgb(40,101,155);
+    font-size: 45px;
+    margin-top: -.5rem;
+}
+
+.chapter-content 
+{
+    background: rgba(0, 0, 0, .7);
+    padding: .75rem 1rem;
+    border-radius: 1rem;
+}
+
+.content-text 
+{
+    font-size: 22px;
+    width: 100%;
+    height: 55px;
+    border: 1.5px solid #fff;
+    border-radius: 2rem;
+    margin: 1.5rem 0; 
+    padding-left: 1.5rem;
+    display: flex;
+    
+    align-items: center;
+    cursor: pointer;
+    background: rgb(15,22,29);
+}
+.content-text p 
+{
+    color: #fff;
+}
+
+.subchapter-description
+{
+    width: 100%;
+    display: none;
+
+}
+
+.subchapter-description.show 
+{
+    display: block;
+}
+
+.subchapter-description .subchapter-title 
+{
+    text-align: left;
+    align-items: center;
+    color: rgb(40,101,155);
+    font-size: 45px;
+    margin-top: -.5rem;
+}
+
+.subchapter-description .subchapter-content
+{
+    margin-left: 2rem;
+}
+
+.subchapter-description .subchapter-content .description 
+{
+    color: rgb(209, 193, 193);
+    line-height: 35px;
+    font-size: 22px;
+    font-family: "Open Sans";
+   
+}
+
+.lesson-buttons
+{
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    gap: 1rem;
+}
+
+.next-lesson,
+.previous-lesson
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(135deg, rgb(127, 169, 211), rgb(39,101,155));
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 225px;
+    color: #fff;
+    border-radius: .75rem;
+}
+
+.next-lesson h3,
+.previous-lesson h3 
+{
+    font-family: "Lato";
+    font-size: 20px;
+}
+
+
+.next-lesson .next-icon 
+{
+    margin-left: .5rem;
+}
+
+.previous-lesson .prev-icon 
+{
+    margin-right: .5rem;
+}
+
+.board-container-lesson 
+{
+    margin-bottom: 5rem;
+}

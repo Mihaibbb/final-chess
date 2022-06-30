@@ -1,0 +1,139 @@
+
+header 
+{
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    margin-top: -40px;
+
+}
+
+header ul 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-gap: 2rem;
+    background: linear-gradient(45deg, rgb(127, 169, 211), rgb(39,101,155));
+    height: 100%;
+    position: relative;
+    padding: 2rem;
+}
+
+.container.dark header ul
+{
+    background-color: rgb(0, 33, 71);
+}
+
+header ul li 
+{
+    list-style: none;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header ul li.account 
+{
+    justify-self: flex-end;
+    position: absolute;
+    right: 25px;
+    padding: 10px;
+    font-size: 25px;
+
+}
+
+header ul li a 
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+header ul li p
+{
+    font-size: 20px;
+}
+
+header ul li:not(.account):hover > *
+{
+    color: rgb(39,101,155);
+}
+
+header ul li:last-child 
+{
+    justify-self: flex-end;
+}
+
+header ul li .globe-icon 
+{
+    font-size: 35px;
+}
+
+header ul li .options_lang
+{
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    width: 150px;
+    top: 45px;
+
+    height: auto;
+    border-radius: 15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    transform-origin: top;
+    transform: scaleY(0);
+    
+    transition: all 350ms ease-in-out;
+}
+
+.options_lang.show 
+{
+    transform: scaleY(1);
+}
+
+.options_lang .lang 
+{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options_lang .lang:hover h2
+{
+    color: rgb(127, 169, 211);
+}
+
+.options_lang .lang:not(.last)
+{
+    /* border-bottom: 1px solid rgb(39,101,155);    */
+}
+
+.options_lang .lang img 
+{
+    width: 100%;
+    max-width: 30px;
+    margin: 25px 15px;
+}
+
+.account-element
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+}

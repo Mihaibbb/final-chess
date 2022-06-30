@@ -1,0 +1,11 @@
+.board .row .square 
+{
+    cursor: pointer;
+    transition: border 300ms ease-in;
+}
+
+.board .row .square.selected
+{
+    border: 2px solid #000;
+   
+}
