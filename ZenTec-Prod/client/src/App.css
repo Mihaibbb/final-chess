@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+
+:root {
+  --background: #020e25;
+  --contrast-color: #8146FF;
+  --contrast-color-highlight: #6f36e9;
+  --contrast-color-2: #579AFF;
+  --contrast-color-3: #FF447C;
+  --background-color: #192846;
+  --dark-color: rgb(7,11,19);
+  --text-color: rgba(255, 255, 255, .8);
+  --text-color-2: #fff;
+  --text-color-3: rgba(255, 255, 255, .6);
+  --text-color-4: rgba(255, 255, 255, .5);
+  --selector-color: rgba(10, 110, 114, 0.5);
+  --over-color: rgba(0, 0, 0, .2);
+  --over-difference-color: rgba(255, 255, 255, .2);
+ 
+}
+
+body {
+  background: var(--background);
+  font-family: 'Source Sans Pro';
+  overflow-x: hidden;
+
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body {
+  
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,338 @@
+.dashboard 
+{
+    display: flex;
+    height: 100vh;
+}
+
+.content 
+{
+    margin-left: calc(17.5% + 2rem);
+    width: 100%;
+    max-width: calc(82.5% - 2rem);
+    display: flex;
+    flex-direction: column;
+ 
+    position: relative;
+    z-index: 10;
+    
+}
+
+.sm-content 
+{
+    margin: 1rem auto 2rem auto;
+    
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.dashboard .left-container 
+{
+    flex: 2;
+    display: flex;
+}
+
+.dashboard .left-container .new-appointments
+{
+    background: var(--over-color);
+    width: 100%;
+    border-radius: 14px;
+    padding: 2rem 0 0 2rem;
+    margin: 0rem auto 5rem;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.dashboard .left-container .new-appointments .message h2
+{
+    color: var(--text-color);
+    font-size: 35px;
+    font-family: "Source Sans Pro";
+    text-align: center;
+    margin: 2rem 0;
+    margin-left: -2rem;
+    font-weight: bolder;
+}
+
+.dashboard .left-container .new-appointments .title,
+.dashboard .right-container .doctors .title
+{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.dashboard .left-container .new-appointments .first-row,
+.dashboard .right-container .doctors .first-row
+{
+    display: flex;
+    width: 90%;
+    background: var(--over-difference-color);
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    border-radius: 28px;
+
+}
+
+.dashboard .left-container .new-appointments .first-row
+{
+    padding: 0 1.25rem;
+}
+
+.dashboard .left-container .new-appointments .row,
+.dashboard .right-container .doctors .doctor
+{
+    display: flex;
+    width: 90%;
+    align-items: center;
+  
+    margin: 1rem;
+    border-bottom: 2px solid var(--over-difference-color);
+    color: var(--text-color);
+    
+  
+}
+
+.dashboard .left-container .new-appointments .row:last-child 
+{
+    border-bottom: none;   
+}
+
+.dashboard .left-container .new-appointments .first-row p,
+.dashboard .right-container .doctors .first-row p
+{
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard .left-container .new-appointments .row div
+
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.dashboard .left-container .new-appointments .row div p
+{
+    color: #c0d0ed;
+    font-weight: normal;
+    font-family: 'Inter';
+}
+
+.dashboard .left-container .new-appointments .row div.number-patient p
+{
+    color: var(--contrast-color-2);
+
+}
+
+.dashboard .left-container .new-appointments .row div.money p
+{
+    color: var(--contrast-color-2);
+}
+
+.dashboard .data
+{
+    display: flex;
+    width: 100%;
+    max-width: 90%;
+    justify-content: center;
+    gap: 1rem;
+    margin: calc(10vh + 2rem) auto 0 auto;
+}
+
+.dashboard .data .data-container 
+{
+    display: flex;
+    align-items: center;
+    
+    border-radius: 10px;
+    border: 1.5px solid var(--text-color-4);
+    background: rgba(0, 0, 0, .2);
+    width: 100%;
+    
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+}
+
+
+
+.dashboard .data .data-container .image
+{
+    background: linear-gradient(var(--contrast-color-2), var(--contrast-color));
+    border-radius: 16px;
+    
+}
+
+.dashboard .data .data-container .image .data-icon
+{
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    padding: 1rem;
+  
+}
+
+.dashboard .data .data-container .data-text 
+{
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    justify-content: center;
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+
+
+.dashboard .data .data-container .data-text h2 
+{
+    color: var(--text-color-2);
+   
+}
+
+.dashboard .data .data-container .data-text p
+{
+    color: var(--text-color);
+}
+
+.dashboard .right-container 
+{
+    flex: 1;
+    height: 100%;
+    
+    width: 100%;
+}
+
+.dashboard .right-container .doctors .doctor 
+{
+    margin-left: 0;   
+}
+
+.dashboard .right-container .doctors .doctor:last-child
+{
+    border-bottom: none;
+}   
+
+.dashboard .right-container .doctors  
+{
+    background: var(--over-color);
+    width: calc(100% - 2rem);
+    border-radius: 14px;
+    padding: 2rem 0 0 2rem;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.dashboard .right-container .doctors .doctor div
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard .right-container .doctors .doctor .status
+{
+    background: var(--over-color);
+    border-radius: 60px;
+    margin: .5rem auto;
+    
+}
+
+.dashboard .right-container .doctors .doctor .status p
+{
+    font-weight: 500;
+    font-family: "Inter";
+    font-size: 16px;
+}
+
+.dashboard .right-container .doctors .doctor .status.on p
+{
+    color: #56C456;    
+    
+}
+
+
+.dashboard .right-container .doctors .doctor .status.off p
+{
+    color: #F25F64;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        margin-left: initial;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data .data-container {
+        width: 100%;
+        
+        max-width: 80%;
+    }
+
+    .sm-content 
+    {
+        flex-direction: column;
+    }
+
+    .dashboard .left-container
+    {
+        flex: 1;
+        width: 100%;
+    }
+
+    .dashboard .left-container .first-row 
+    {
+        padding: 0;
+    }
+
+    .dashboard .left-container .new-appointments .message h2
+    {
+        font-size: 5vw;
+        margin-inline: 0;
+    }
+
+    .dashboard .left-container .new-appointments 
+    {
+        padding-inline: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .data .data-container {
+        width: 100%;
+        
+        max-width: 95%;
+    }
+
+    .sm-content
+    {
+       padding: 0;
+    }
+
+    .dashboard .left-container
+    {
+        
+    }
+}
+
+
+

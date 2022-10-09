@@ -1,0 +1,174 @@
+.create-patient 
+{
+    display: flex;
+    
+ 
+    height: 100vh;
+}
+
+
+.input input::-webkit-outer-spin-button,
+.input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=date] {
+    color-scheme: dark;
+}
+
+.create-patient h2.title
+{
+    margin: calc(10vh + 2rem) auto 2rem;
+    color: var(--text-color);
+    font-size: 40px;
+}
+
+.form 
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+   
+    column-gap: 5rem;
+    row-gap: 1.5rem;
+}
+
+.form .info 
+{
+    grid-column: 1 / -1;
+    font-size: 30px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form .info .option-icon 
+{
+    cursor: pointer;
+    transition: all 350ms ease-in-out;
+}
+
+.form .info .option-icon.active 
+{
+    transform: rotateZ(180deg);
+} 
+
+.form .input 
+{
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.form .input:not(.no-bg) input
+{
+
+   width: 300px;
+ 
+   border: 1px solid rgba(255, 255, 255, .1);
+   outline: none;
+   background: rgba(255, 255, 255, .025);
+   height: 40px;
+   border-radius: 10px;
+   font-family: 'Inter';
+   color: var(--text-color);
+   padding-left: 1rem;
+}
+
+.form .input > p
+{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.form .input textarea 
+{
+    resize: vertical;
+    border: 1px solid rgba(255, 255, 255, .1);
+    outline: none;
+    background: rgba(255, 255, 255, .025);
+    min-height: 100px;
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+.form button 
+{
+    grid-column: 1 / -1;
+    width: calc(100% + 1rem);
+    height: 50px;
+    margin: 2rem auto;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: var(--contrast-color);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Source Sans Pro";
+}
+
+.form .options 
+{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.form .options .option
+{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    
+}
+
+.form .options .option .circle
+{
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .options .option .circle .active-icon 
+{
+    opacity: 0;
+    font-size: 15px;
+    color: var(--contrast-color);
+}
+
+.form .options .option.active .circle .active-icon
+{
+    opacity: 1;
+}
+
+.form .options p 
+{
+    color: var(--text-color);
+    
+}

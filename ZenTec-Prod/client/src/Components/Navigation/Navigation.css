@@ -1,0 +1,160 @@
+.navigation 
+{
+    background: var(--background-color);
+    border-right: 1px solid rgba(255, 255, 255, .25);
+    display: flex;
+    
+    flex-direction: column;
+    gap: .35rem;
+    padding: 2.5rem 1rem 0;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 17.5%;
+    min-width: 225px;
+    transition: all 500ms ease-in-out;
+}
+
+.navigation .patient-icon 
+{
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+    margin-left: -6px;
+}
+
+.navigation .close-icon 
+{
+    display: none;
+    background: var(--contrast-color);
+    color: var(--text-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: .5rem;
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.navigation > div:not(.logo)
+{
+    padding-left: 1rem;
+}
+
+.navigation .logo 
+{
+    width: "100%";
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navigation .logo img 
+{
+    width: 90%;
+    height: auto;
+}
+
+
+
+.navigation .item 
+{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.navigation .item:hover h3,
+.navigation .item:hover .item-icon
+{
+    color: #fff;
+}
+
+.navigation .item.active 
+{
+    background: var(--contrast-color);
+}
+
+
+.navigation .item .item-icon 
+{
+    color: #AFB3BE;
+    font-size: 24px;
+    transition: all 350ms ease-in-out;
+
+}
+
+.navigation .item.active .item-icon 
+{
+    color: #fff;
+}
+
+.navigation .item h3
+{
+    font-size: 22px;
+    color: #7988A3;
+    font-weight: 600;
+    margin-left: 14px;
+    transition: all 350ms ease-in-out;
+
+}
+
+.navigation .item.active h3 
+{
+    color: #fff;
+}
+
+.navigation .settings 
+{
+    position: absolute; 
+    bottom: 55px;
+    display: flex;
+    width: 100%;
+    gap: .75rem;
+    cursor: pointer;
+}
+
+.navigation .settings h3
+{
+    font-size: 18px;
+    color: #7988A3;
+    font-weight: 600;
+    transition: all 350ms ease-in-out;
+}
+
+.navigation .settings:hover h3
+{
+    color: #fff;
+}
+
+.navigation .settings .item-img 
+{
+    fill: #000;
+    color: #000;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navigation {
+        left: -100%;
+        z-index: 11;
+        
+    }
+
+    .navigation.active {
+        left: 0;
+    }
+
+    .navigation.active .close-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+}

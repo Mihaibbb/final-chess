@@ -1,0 +1,141 @@
+.admin 
+{
+  
+    width: 100%;
+    max-width: 100%;
+
+    
+}
+
+.admin > *:not(.message)
+{
+    max-width: 90%;
+    margin: 1rem auto;
+}
+
+.admin .message 
+{
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(25, 147, 25);
+    margin-top: 1rem;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.admin .message p 
+{
+    text-align: center;
+}
+
+.admin .title 
+{
+    color: var(--contrast-color);
+    text-align: center;
+    font-size: 50px;
+}
+
+.admin p 
+{
+    color: #fff;
+    font-size: 20px;
+}
+
+.admin .create-organisation,
+.admin .create-user
+{
+    width: calc(92.5%);
+    background: var(--dark-color);
+    height: 50px;
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.admin .create-user
+{
+    background: rgba(125, 125, 255, .15);
+    margin-bottom: 1rem;
+}
+
+.admin .create-organisation p,
+.admin .create-user p
+{
+    color: #96a7c7;
+    margin-left: .5rem;
+  
+}
+
+.admin .create-organisation .plus-icon,
+.admin .create-user .plus-icon
+{
+    color: var(--contrast-color);
+    font-size: 22.5px;
+}
+
+
+.admin .organisation 
+{
+    width: 100%;
+    max-width: 90%;
+    margin: 2rem auto;
+    background: var(--dark-color);
+    border-radius: 20px;
+    padding: 1rem;
+  
+}
+
+.admin .organisation .user 
+{
+
+
+}
+
+.admin .organisation .line 
+{
+    width: 100%;
+    max-width: 92.5%;
+    margin: .25rem auto 1.5rem;
+    height: 1.5px;
+    background: rgba(125, 125, 255, .5);
+}
+
+.admin .organisation .first-row,
+.admin .organisation .user 
+{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+}
+
+.admin .organisation .first-row p,
+.admin .organisation .user p
+{
+    width: 100%;
+    text-align: center;
+}
+
+.admin .organisation .user p
+{
+    color: var(--contrast-color);
+}
+
+.admin .organisation .organisation-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin .organisation .organisation-container h2
+{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+
+}

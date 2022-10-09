@@ -1,0 +1,163 @@
+.header 
+{
+    width: 100%;
+    max-width: calc(82.5% - 2rem);
+
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background: var(--background-color);
+    position: fixed;
+    z-index: 1000;
+    justify-content: space-between;
+    border-left: 1px solid rgba(255, 255, 255, .25);
+}
+
+.header .navigation-icon
+{
+    display: none;
+    position:absolute;
+    left: 20px;
+    font-size: 35px;
+    border-radius: 50%;
+    
+    color: var(--contrast-color);
+}
+
+.header .searchbar-container
+{
+    display: flex;
+    align-items: center;
+    
+    height: 100%;
+    margin-left: 60px;
+}
+
+.header .searchbar 
+{
+    border: 2px solid rgba(255, 255, 255, 0.272);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    display: none;
+}
+
+.header .searchbar input
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 270px;
+    height: 42px;
+    padding-left: .75rem;
+    color: rgba(255, 255, 255, .8);
+    font-size: 18px;
+    font-family: "Source Sans Pro";
+ 
+}
+
+.header .searchbar .search-icon 
+{
+    font-size: 18px;
+    color: rgba(255, 255, 255, .45);
+}
+
+.header .account-details
+{
+    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1.5rem;
+   
+}
+
+.header .account-details .notifications
+{
+    background: rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.header .account-details .notifications .notification-signal
+{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background: crimson;
+    border-radius: 50%;
+}
+
+
+.header .account-details .notifications .notification-icon 
+{
+    padding: .7rem .8rem;
+    font-size: 22px;
+    color: var(--contrast-color);
+}
+
+.header .account-details .account-photo 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.header .account-details .account-photo .account-icon 
+{
+    font-size: 25px;
+    background: rgba(0, 0, 0, .3);
+    padding: .7rem .8rem;
+    border-radius: 50%;
+    color: var(--contrast-color);
+    cursor: pointer;    
+}
+
+.header .account-details .account-photo img 
+{
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.header .account-details .account-name 
+{
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header .account-details .account-info-icon
+{
+    color: rgb(148, 151, 158);
+    cursor: pointer;
+    transition: all 350ms ease-in-out;
+    font-size: 16px;
+}
+
+.header .account-details .account-info-icon:hover
+{
+    transform: translateY(5px);
+}
+
+@media only screen and (max-width: 1200px) {
+    .header {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header .navigation-icon {
+        display: block;
+    }
+}
