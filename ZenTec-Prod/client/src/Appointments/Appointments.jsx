@@ -835,7 +835,7 @@ const Appointments = ({ data }) => {
                     <div className="schedules" style={{ marginTop: hourContainerHeight }}>
                         {doctors && doctors.length > 0 && doctors.map((doctor, idx) => (
                             filterActive !== 3 && filterActive !== 4 ? 
-                            <div className="schedule-container" key={idx} ref={ref => doctorRef.current[idx] = ref}>
+                            <div className={`schedule-container ${activeGaps ? "active-gaps" : ""}`} key={idx} ref={ref => doctorRef.current[idx] = ref}>
                                 {days.map((day, dayIdx) => (
                                     filterActive === 0 ? (
                                         <div className="day-container" key={dayIdx}>

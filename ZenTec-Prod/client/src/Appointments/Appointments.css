@@ -361,6 +361,11 @@ input[type=number] {
 
 }
 
+.appointments .schedule-container.active-gaps .day-container .schedule-hour:not(.inactive) .gap 
+{
+    border-top: 1px solid rgba(125, 125, 255, .2);
+}
+
 .appointments .schedule-container .day-container .schedule-hour .gap .appointment-interval 
 {
     color: #fff;
@@ -824,4 +829,47 @@ input[type=number] {
     font-size: 18px;
     font-family: "Inter";
     font-weight: 600;
+}
+
+.content .options 
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 3.5rem;
+}
+
+.content .options .option 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.content .options .option p 
+{
+    color: var(--text-color);
+    font-size: 22px;
+    font-family: "Inter";
+}
+
+.content .options .option-icon
+{
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--contrast-color);
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 350ms ease-in-out;
+    color: #fff;
+}
+
+.content .options .option-icon.active
+{
+    background: var(--contrast-color);
+
 }

@@ -67,23 +67,23 @@ const App = () => {
                 {/* <Route path="/" element={<Home />} /> */}
                 {data ? (
                     <>
-                        <Route path="dashboard" element={isAdmin ? <Admin data={data} language={language} /> : <Dashboard data={data} language={language} />} />
+                        <Route path="dashboard" element={isAdmin ? <Admin data={data} /> : <Dashboard data={data} />} />
                         
                         {!isAdmin ? (
                             <>
                                 <Route path="patients" element={<Patients data={data} />} />
                                 <Route path="patient/:id" element={<PatientAccount data={data} />} />
                                 <Route path="doctors" element={<Users data={data}/>} />
-                                <Route path="appointments" element={<Appointments data={data} language={language} />} />
+                                <Route path="appointments" element={<Appointments data={data} />} />
                                 {/* <Route path="import-patients" element={<ImportPatients />}/> */}
-                                <Route path="create-patient" element={<CreatePatient data={data} language={language} />} />
+                                <Route path="create-patient" element={<CreatePatient data={data} />} />
 
 
                             </>
                         ) : (
                             <>
-                                <Route path="create-organisation" element={<CreateOrganisation language={language} />} />
-                                <Route path="create-user" element={<CreateUser language={language} />}/>
+                                <Route path="create-organisation" element={<CreateOrganisation />} />
+                                <Route path="create-user" element={<CreateUser />}/>
                             </>
                         )}
                         <Route path="*" element={<Navigate to="/dashboard" />}/>

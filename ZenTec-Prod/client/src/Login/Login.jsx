@@ -47,7 +47,7 @@ const Login = () => {
             if (await res.objectId && await res.hashedPassword) {
                 setCookie('user-id', await res.objectId);
                 setCookie('pwd', await res.hashedPassword);
-                setCookie('language', 'en');
+                setCookie('language', 'ro');
                 window.location.reload();
             } 
             console.log(await res.type);

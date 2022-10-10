@@ -219,7 +219,7 @@ const Dashboard = ({ data }) => {
                                 <p>{cookies.language === "en" ? "Action" : "Optiuni"}</p>
                             </div>
                             {nextAppointments && nextAppointments.length > 0 ? nextAppointments.map((patient, idx) => (
-                                <div className="row">
+                                <div className="row" key={idx}>
                                     <div className="number-patient">
                                         <p>{idx + 1 < 10 ? `0${idx + 1}` : idx + 1}</p>
                                     </div>
@@ -257,7 +257,7 @@ const Dashboard = ({ data }) => {
                                 <p>{cookies.language === "en" ? "Doctor Status" : "Status doctor"}</p>
                             </div>
                             {doctors && doctors.length > 0 && doctors.map((doctor, idx) => (
-                                <div className="doctor">
+                                <div className="doctor" key={idx}>
                                     <div>
                                         <p>{doctor.name}</p>
                                     </div>
